@@ -223,7 +223,7 @@ button:hover {
         padding: 12px; /* Comfortable padding */
         margin-top: 5px; /* Space at the top */
         margin-bottom: 5px; /* Space at the bottom */
-        width: calc(100% - 24px); /* Adjust width to account for padding */
+        width: calc(100%); /* Adjust width to account for padding */
     }
 
     /* Adjustments for input fields and buttons for full-width */
