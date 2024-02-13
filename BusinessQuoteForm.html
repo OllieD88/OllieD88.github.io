@@ -54,7 +54,46 @@
                 <label for="yearest" class="label-bold">What year was your business established?</label>
                 <input type="tel" class="styled-input" id="yearest" placeholder="yyyy" name="yearest" pattern="[0-9]{4}" title="Year must be four digits" required>
             </div>
-        </div>        
+        </div>
+
+                <div class="question-container">
+            <div class="form-group">
+                <label for="turnover" class="label-bold">What is your business's turnover?</label>
+                <select id="turnover" name="turnover" class="styled-input">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="Less than £25,000">Less than £25,000</option>
+                    <option value="£25,000 - £50,000">£25,000 - £50,000</option>
+                    <option value="£50,001 - £75,000">£50,000 - £75,000</option>
+                    <option value="£75,001 - £100,000">£75,000 - £100,000</option>
+                    <option value="£100,001 - £125,000">£100,000 - £125,000</option>
+                    <option value="£125,001 - £150,000">£125,000 - £150,000</option>
+                    <option value="£150,001 - £175,000">£150,000 - £175,000</option>
+                    <option value="£175,001 - £200,000">£175,000 - £200,000</option>
+                    <option value="£200,001 - £225,000">£200,000 - £225,000</option>
+                    <option value="£225,001 - £250,000">£225,000 - £250,000</option>
+                    <option value="£250,001 - £500,000">£250,000 - £500,000</option>
+                    <option value="£500,001 - £750,000">£500,000 - £750,000</option>
+                    <option value="£750,001 - £1,000,000">£750,000 - £1,000,000</option>
+                    <option value="£1,000,001 - £1,250,000">£1,000,000 - £1,250,000</option>
+                    <option value="£1,250,001 - £1,500,000">£1,250,000 - £1,500,000</option>
+                    <option value="£1,500,001 - £1,750,000">£1,500,000 - £1,750,000</option>
+                    <option value="£1,750,001 - £2,000,000">£1,750,000 - £2,000,000</option>
+                    <option value="£2,000,001 - £2,500,000">£2,000,000 - £2,500,000</option>
+                    <option value="£2,500,001 - £3,000,000">£2,500,000 - £3,000,000</option>
+                    <option value="£3,000,001 - £3,500,000">£3,000,000 - £3,500,000</option>
+                    <option value="£3,500,001 - £4,000,000">£3,500,000 - £4,000,000</option>
+                    <option value="£4,000,001 - £4,500,000">£4,000,000 - £4,500,000</option>
+                    <option value="£4,500,001 - £5,000,000">£4,500,001 - £5,000,000</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="policystartdate" class="label-bold">When do you need your policy to start?</label>
+                <input type="date" class="styled-input" id="policystartdate" placeholder="dd/mm/yyyy" title="Policy Start Date">
+            </div>
+        </div>
 
         <div class="form-group-buttons">
             <button type="button" onclick="nextPage(1)">Next</button>
