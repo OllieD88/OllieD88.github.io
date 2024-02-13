@@ -140,7 +140,7 @@ button:hover {
         display: block; /* Each radio button on its own line */
         padding: 12px; /* Adjust padding if necessary */
         margin: 5px 0; /* Stack vertically with space between */
-        width: calc(100% - 24px); /* Adjust width to account for padding */
+        width: calc(100%); /* Adjust width to account for padding */
     }
 
     .question-container, .form-group, .suggestions {
