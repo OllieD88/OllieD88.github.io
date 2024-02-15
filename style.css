@@ -1,5 +1,166 @@
 /* Stylesheet for Dynamic Insurance Form */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+        }
+
+        .logo {
+            max-height: 65px;
+        }
+        
+        .logobanner {
+            max-height: 85px;
+            object-position: 25% 25%;
+        }
+        
+        nav {
+            flex-grow: 1;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            display: block;
+            font-weight: 400; /* Normal weight for menu items */
+        }
+
+        nav ul li a:hover, nav ul li a:focus {
+            border-bottom: 3px solid #ffbe22; /* Underline effect on hover */
+        }
+
+        nav ul li:hover ul, nav ul li:focus-within ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            min-width: 305px; /* Adjust this value as needed to fit your content */
+            z-index: 1000; /* High z-index to ensure the dropdown is above other content */
+        }
+
+        nav ul ul li {
+            clear: both;
+            padding: 10px;
+            width: 305px; /* Set a fixed width for dropdown items */
+        }
+
+        nav ul ul li a {
+            padding: 0px 0px; /* Adjusted padding for better spacing */
+            white-space: nowrap; /* Prevent text wrapping */
+            font-weight: 400; /* Normal weight for dropdown items */
+            word-break: keep-all; /* Prevent breaking words */
+        }
+
+        .quote-button {
+            background-color: #ffbe22;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: 800; /* Extra bold */
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        
+        .quote-button:hover {
+            background-color: black; /* Button turns black on hover */
+            color: white; /* Text color remains white */
+        }
+
+        /* Hamburger menu lines */
+        .hamburger-menu {
+          display: none; /* Hidden by default, will be displayed on small screens */
+          cursor: pointer;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 30px; /* Width of the hamburger */
+          height: 21px; /* Height of the hamburger */
+        }
+
+        .hamburger-menu .line {
+          width: 100%;
+          height: 3px;
+          background-color: black;
+          transition: all 0.3s ease;
+        }
+
+        /* Media Queries for Mobile Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 15px; /* Add space between logo and the nav menu */
+            }
+
+            nav ul, nav ul ul {
+                flex-direction: column;
+                width: 100%;
+                display: none; /* Hide the navigation */
+            }
+
+            nav ul li, nav ul ul li {
+                margin: 0; /* Remove margin for mobile */
+                width: 100%; /* Full width nav items */
+            }
+
+            nav ul li a, nav ul ul li a {
+                border-bottom: 1px solid #ddd; /* Add a separator between menu items */
+                padding-left: 20px; /* Indent dropdown links */
+            }
+
+            nav ul ul {
+                position: static;
+                box-shadow: none;
+                display: none; /* Ensure sub-menus are initially hidden */
+            }
+
+            .quote-button {
+                width: 100%; /* Full width button */
+                margin-top: 10px; /* Add space between nav and button */
+            }
+
+            .hamburger-menu {
+                display: flex; /* Show the hamburger */
+            }
+        }
+        
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurable - Insurance for Everyone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
