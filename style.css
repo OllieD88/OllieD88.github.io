@@ -137,14 +137,14 @@
                 display: none; /* Ensure sub-menus are initially hidden */
             }
 
-            .quote-button {
-                order: 2; /* Ensures that the button comes after the hamburger menu */
-                margin-left: auto; /* Push the call button to the right */
-                margin-right: 10px; /* Optional: Adds some space to the right of the button */
-                padding: 10px 20px; /* Adjust padding to control the size */
-                white-space: nowrap; /* Prevents the text from wrapping */
-                flex: 0 0 auto; /* Do not allow the button to grow or shrink */
-            }
+                .quote-button {
+                        order: 2; /* Ensures that the button comes after the hamburger menu */
+                        margin-left: auto; /* Push the call button to the right */
+                        margin-right: 10px; /* Optional: Adds some space to the right of the button */
+                        padding: 10px 20px; /* Adjust padding to control the size */
+                        white-space: nowrap; /* Prevents the text from wrapping */
+                        flex: 0 0 auto; /* Do not allow the button to grow or shrink */
+                }
 
          nav {
                 order: 3; /* Ensures that the nav comes last */
