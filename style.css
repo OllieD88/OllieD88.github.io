@@ -116,11 +116,17 @@
         /* Media Queries for Mobile Styles */
         @media (max-width: 768px) {
             header {
-                flex-direction: row; /* Change to row */
-                justify-content: space-between; /* This will put space between the menu and the logo */
-                padding-top: 10px;
-                padding-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start; /* Align items to the start of the header */
+                align-items: center; /* Center items vertically */
+                padding: 10px;
             }
+                
+                .logo {
+                        max-height: 65px; /* Set the max height for your logo */
+                        width: auto; /* Keep the width auto to maintain aspect ratio */
+                }
 
             .logo, .hamburger-menu {
                 flex: 0 0 auto; /* This means they won't grow or shrink but will be based on their auto width */
@@ -149,13 +155,24 @@
             }
 
             .quote-button {
-                width: 100%; /* Full width button */
-                margin-top: 10px; /* Add space between nav and button */
+                order: 2; /* Ensures that the button comes after the hamburger menu */
+                margin-left: auto; /* Push the call button to the right */
+                margin-right: 10px; /* Optional: Adds some space to the right of the button */
+                padding: 10px 20px; /* Adjust padding to control the size */
+                white-space: nowrap; /* Prevents the text from wrapping */
+                flex: 0 0 auto; /* Do not allow the button to grow or shrink */
+            }
+
+         nav {
+                order: 3; /* Ensures that the nav comes last */
+                width: 100%; /* Ensures nav takes the full width */
+                justify-content: flex-end; /* Aligns nav items to the end */
             }
 
             .hamburger-menu {
-                order: -1; /* This will move the hamburger menu to the left */
-                margin-right: 10px; /* Add some space between the hamburger menu and the logo */
+                display: block; /* Ensure the hamburger menu is visible */
+                order: 1; /* The order doesn't need to be -1 if the header flex-direction is row and justify-content is flex-start */
+                margin-right: 10px; /* Space between the hamburger menu and the logo */
             }
         }
         
