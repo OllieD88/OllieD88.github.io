@@ -116,12 +116,14 @@
         /* Media Queries for Mobile Styles */
         @media (max-width: 768px) {
             header {
-                flex-direction: column;
-                text-align: center;
+                flex-direction: row; /* Change to row */
+                justify-content: space-between; /* This will put space between the menu and the logo */
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
 
-            .logo {
-                margin-bottom: 15px; /* Add space between logo and the nav menu */
+            .logo, .hamburger-menu {
+                flex: 0 0 auto; /* This means they won't grow or shrink but will be based on their auto width */
             }
 
             nav ul, nav ul ul {
@@ -152,7 +154,8 @@
             }
 
             .hamburger-menu {
-                display: flex; /* Show the hamburger */
+                order: -1; /* This will move the hamburger menu to the left */
+                margin-right: 10px; /* Add some space between the hamburger menu and the logo */
             }
         }
         
