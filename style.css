@@ -145,6 +145,7 @@
                         padding: 10px 20px; /* Adjust padding to control the size */
                         white-space: nowrap; /* Prevents the text from wrapping */
                         flex: 0 0 auto; /* Do not allow the button to grow or shrink */
+                        box-align: right;
                 }
 
          nav {
