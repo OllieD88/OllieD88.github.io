@@ -138,7 +138,7 @@
                 display: none; /* Ensure sub-menus are initially hidden */
             }
 
-                .quote-button {
+                .call-us-button {
                         order: 2; /* Ensures that the button comes after the hamburger menu */
                         margin-left: auto; /* Push the call button to the right */
                         margin-right: 10px; /* Optional: Adds some space to the right of the button */
