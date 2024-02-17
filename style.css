@@ -80,7 +80,7 @@
             word-break: keep-all; /* Prevent breaking words */
         }
 
-        .quote-button {
+        .call-us-button {
             background-color: #ffbe22;
             color: white;
             border: none;
@@ -90,11 +90,12 @@
             cursor: pointer;
             text-transform: uppercase;
         }
-        
-        .quote-button:hover {
-            background-color: black; /* Button turns black on hover */
-            color: white; /* Text color remains white */
+
+        .call-us-button:hover {
+            background-color: black; /* Or any other hover effect you prefer */
+            color: white;
         }
+
 
         /* Media Queries for Mobile Styles */
         @media (max-width: 768px) {
