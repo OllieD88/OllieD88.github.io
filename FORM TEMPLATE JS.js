@@ -104,6 +104,39 @@ document.addEventListener('click', function (e) {
         });
     }
 
+    // JavaScript to toggle the visibility
+    document.getElementById('yesOptionpublicliability').addEventListener('change', function() {
+        document.getElementById('coverQuestion').style.display = 'block';
+    });
+
+    document.getElementById('noOptionpublicliability').addEventListener('change', function() {
+        document.getElementById('coverQuestion').style.display = 'none';
+    });
+
+    document.getElementById('yesOptionprofessionalindemnity').addEventListener('change', function() {
+        document.getElementById('coverQuestionpi').style.display = 'block';
+    });
+
+    document.getElementById('noOptionprofessionalindemnity').addEventListener('change', function() {
+        document.getElementById('coverQuestionpi').style.display = 'none';
+    });
+
+    document.getElementById('yesOptionportablehandtools').addEventListener('change', function() {
+        document.getElementById('coverQuestiontools').style.display = 'block';
+    });
+
+    document.getElementById('noOptionportablehandtools').addEventListener('change', function() {
+        document.getElementById('coverQuestiontools').style.display = 'none';
+    });
+
+    document.getElementById('yesOptionbusinessequipment').addEventListener('change', function() {
+        document.getElementById('coverQuestionbe').style.display = 'block';
+    });
+
+    document.getElementById('noOptionbusinessequipment').addEventListener('change', function() {
+        document.getElementById('coverQuestionbe').style.display = 'none';
+    });
+
 function submitForm() {
     // Collect data from the form
     const formData = {
