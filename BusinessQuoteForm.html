@@ -165,7 +165,170 @@
     <div class="form-page" id="page2">
         <h2>Tailor Your Cover</h2>
         <!-- Add your form fields here -->
-        <input type="number" id="coverAmount" placeholder="Cover Amount">
+        <div class="question-container">
+            <div class="form-group">
+                <label for="publicliability" class="label-bold">Do you need Public Liability cover?</label>
+                <div id="publicliability" class="btn-radio-group">
+                    <input type="radio" id="yesOptionpublicliability" name="publicliability" value="PublicLiability" hidden/>
+                    <label for="yesOptionpublicliability" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionpublicliability" name="publicliability" value="PublicLiability" hidden/>
+                    <label for="noOptionpublicliability" class="btn-radio">No</label>
+                </div>
+            </div>
+            <div class="form-group" id="coverQuestion" style="display: none;">
+                <label for="publicliabilitylevel" class="label-bold">How much cover do you need?</label>
+                <div id="publicliabilitylevel" class="btn-radio-group">
+                    <input type="radio" id="£1mOptionpublicliability" name="publicliabilitylevel" value="PublicLiabilitylevel" hidden/>
+                    <label for="£1mOptionpublicliability" class="btn-radio">£1,000,000</label>
+        
+                    <input type="radio" id="£2mOptionpublicliability" name="publicliabilitylevel" value="PublicLiabilitylevel" hidden checked/>
+                    <label for="£2mOptionpublicliability" class="btn-radio selected">£2,000,000</label>
+        
+                    <input type="radio" id="£5mOptionpublicliability" name="publicliabilitylevel" value="PublicLiabilitylevel" hidden/>
+                    <label for="£5mOptionpublicliability" class="btn-radio">£5,000,000</label>
+        
+                    <input type="radio" id="£10mOptionpublicliability" name="publicliabilitylevel" value="PublicLiabilitylevel" hidden/>
+                    <label for="£10mOptionpublicliability" class="btn-radio">£10,000,000</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-container">
+            <div class="form-group">
+                <label for="professionalindemnity" class="label-bold">Do you need Professional Indemnity cover?</label>
+                <div id="professionalindemnity" class="btn-radio-group">
+                    <input type="radio" id="yesOptionprofessionalindemnity" name="professionalindemnity" value="ProfessionalIndemnity" hidden/>
+                    <label for="yesOptionprofessionalindemnity" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionprofessionalindemnity" name="professionalindemnity" value="ProfessionalIndemnity" hidden/>
+                    <label for="noOptionprofessionalindemnity" class="btn-radio">No</label>
+                </div>
+            </div>
+            <div class="form-group" id="coverQuestionpi" style="display: none;">
+                <label for="professionalindemnitylevel" class="label-bold">How much cover do you need?</label>
+                <select id="professionalindemnitylevel" name="professionalindemnitylevel" class="styled-input">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="£50,000">£50,000</option>
+                    <option value="£100,000">£100,000</option>
+                    <option value="£250,000">£250,000</option>
+                    <option value="£500,000">£500,000</option>
+                    <option value="£1,000,000">£1,000,000</option>
+                    <option value="£2,000,000">£2,000,000</option>
+                    <option value="£5,000,000">£5,000,000</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="portablehandtools" class="label-bold">Do you need cover for your portable hand tools?</label>
+                <div id="portablehandtools" class="btn-radio-group">
+                    <input type="radio" id="yesOptionportablehandtools" name="portablehandtools" value="portablehandtools" hidden/>
+                    <label for="yesOptionportablehandtools" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionportablehandtools" name="portablehandtools" value="portablehandtools" hidden/>
+                    <label for="noOptionportablehandtools" class="btn-radio">No</label>
+                </div>
+            </div>
+            <div class="form-group" id="coverQuestiontools" style="display: none;">
+                <label for="toolslevel" class="label-bold">How much cover do you need?</label>
+                <select id="toolslevel" name="toolslevel" class="styled-input">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="£1,000">£1,000</option>
+                    <option value="£2,000">£2,000</option>
+                    <option value="£3,000">£3,000</option>
+                    <option value="£4,000">£4,000</option>
+                    <option value="£5,000">£5,000</option>
+                    <option value="£6,000">£6,000</option>
+                    <option value="£7,000">£7,000</option>
+                    <option value="£8,000">£8,000</option>
+                    <option value="£9,000">£9,000</option>
+                    <option value="£10,000">£10,000</option>
+                    <option value="£11,000">£11,000</option>
+                    <option value="£12,000">£12,000</option>
+                    <option value="£13,000">£13,000</option>
+                    <option value="£14,000">£14,000</option>
+                    <option value="£15,000">£15,000</option>
+                    <option value="£16,000">£16,000</option>
+                    <option value="£17,000">£17,000</option>
+                    <option value="£18,000">£18,000</option>
+                    <option value="£19,000">£19,000</option>
+                    <option value="£20,000">£20,000</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="businessequipment" class="label-bold">Do you need cover for business equipment?</label>
+                <div id="businessequipment" class="btn-radio-group">
+                    <input type="radio" id="yesOptionbusinessequipment" name="businessequipment" value="businessequipment" hidden/>
+                    <label for="yesOptionbusinessequipment" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionbusinessequipment" name="businessequipment" value="businessequipment" hidden/>
+                    <label for="noOptionbusinessequipment" class="btn-radio">No</label>
+                </div>
+            </div>
+            <div class="form-group" id="coverQuestionbe" style="display: none;">
+                <label for="belevel" class="label-bold">How much cover do you need?</label>
+                <select id="belevel" name="belevel" class="styled-input">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="£1,000">£1,000</option>
+                    <option value="£2,000">£2,000</option>
+                    <option value="£3,000">£3,000</option>
+                    <option value="£4,000">£4,000</option>
+                    <option value="£5,000">£5,000</option>
+                    <option value="£6,000">£6,000</option>
+                    <option value="£7,000">£7,000</option>
+                    <option value="£8,000">£8,000</option>
+                    <option value="£9,000">£9,000</option>
+                    <option value="£10,000">£10,000</option>
+                    <option value="£11,000">£11,000</option>
+                    <option value="£12,000">£12,000</option>
+                    <option value="£13,000">£13,000</option>
+                    <option value="£14,000">£14,000</option>
+                    <option value="£15,000">£15,000</option>
+                    <option value="£16,000">£16,000</option>
+                    <option value="£17,000">£17,000</option>
+                    <option value="£18,000">£18,000</option>
+                    <option value="£19,000">£19,000</option>
+                    <option value="£20,000">£20,000</option>
+                    <option value="£25,000">£25,000</option>
+                    <option value="£30,000">£30,000</option>
+                    <option value="£35,000">£35,000</option>
+                    <option value="£40,000">£40,000</option>
+                    <option value="£45,000">£45,000</option>
+                    <option value="£50,000">£50,000</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="d&o" class="label-bold">Would you like Directors & Officers Liability cover?</label>
+                <div id="d&o" class="btn-radio-group">
+                    <input type="radio" id="yesOptiond&o" name="d&o" value="d&o" hidden/>
+                    <label for="yesOptiond&o" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptiond&o" name="d&o" value="d&o" hidden/>
+                    <label for="noOptiond&o" class="btn-radio">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="personalaccident" class="label-bold">Would you like Personal Accident cover?</label>
+                <div id="personalaccident" class="btn-radio-group">
+                    <input type="radio" id="yesOptionpersonalaccident" name="personalaccident" value="personalaccident" hidden/>
+                    <label for="yesOptionpersonalaccident" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionpersonalaccident" name="personalaccident" value="personalaccident" hidden/>
+                    <label for="noOptionpersonalaccident" class="btn-radio">No</label>
+                </div>
+            </div>
+        </div>
         
         <div class="form-group-buttons">    
            <button type="button" onclick="previousPage(1)">Back</button>
