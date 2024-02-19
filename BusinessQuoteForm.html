@@ -336,9 +336,9 @@
         </div>
     </div>
 
-    <!-- Page 3: Declarations -->
+    <!-- Page 3: Missing -->
     <div class="form-page" id="page3">
-        <h2>Declarations</h2>
+        <h2>Missing</h2>
         <!-- Add your form fields here -->
         <input type="checkbox" id="declaration1"> I agree to the Terms and Conditions<br>
         
@@ -348,11 +348,61 @@
         </div>
     </div>
 
-        <!-- Page 4: Test -->
+        <!-- Page 4: Declarations -->
     <div class="form-page" id="page4">
-        <h2>Test</h2>
+        <h2>Declarations</h2>
         <!-- Add your form fields here -->
-        <input type="checkbox" id="declaration1"> I agree to the Terms and Conditions<br>
+ <div class="question-container">
+            <div class="form-group">
+                <label for="convictions" class="label-bold">Has any proposer, director, or partner involved with the business ever been charged with or convicted of any criminal offenses, excluding minor motoring offenses and those considered spent under the Rehabilitation of Offenders Act 1974?</label>
+                <div id="convictions" class="btn-radio-group">
+                    <input type="radio" id="yesOptionconvictions" name="convictions" value="convictions" hidden/>
+                    <label for="yesOptionpublicliability" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionconvictions" name="convictions" value="convictions" hidden checked/>
+                    <label for="noOptionconvictions" class="btn-radio selected">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="financial" class="label-bold">In the last 5 years, has any proposer, director, or partner involved with the business faced a county court judgment or equivalent, or been involved in bankruptcy or similar financial proceedings?</label>
+                <div id="financial" class="btn-radio-group">
+                    <input type="radio" id="yesOptionfinancial" name="financial" value="financial" hidden/>
+                    <label for="yesOptionfinancial" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionfinancial" name="financial" value="financial" hidden checked/>
+                    <label for="noOptionfinancial" class="btn-radio selected">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="insurancehistory" class="label-bold">In the last 5 years, has any proposer, director, or partner involved with the business had a policy voided, an insurance cancelled, a renewal declined, or special terms imposed by an insurer?</label>
+                <div id="insurancehistory" class="btn-radio-group">
+                    <input type="radio" id="yesOptioninsurancehistory" name="insurancehistory" value="insurancehistory" hidden/>
+                    <label for="yesOptioninsurancehistory" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptioninsurancehistory" name="insurancehistory" value="insurancehistory" hidden checked/>
+                    <label for="noOptioninsurancehistory" class="btn-radio selected">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="form-group">
+                <label for="claims" class="label-bold">Do you need Public Liability cover?</label>
+                <div id="claims" class="btn-radio-group">
+                    <input type="radio" id="yesOptionclaims" name="claims" value="claims" hidden/>
+                    <label for="yesOptionclaims" class="btn-radio">Yes</label>
+        
+                    <input type="radio" id="noOptionclaims" name="claims" value="claims checked" hidden/>
+                    <label for="noOptionclaims" class="btn-radio selected">No</label>
+                </div>
+            </div>
+        </div>
         
         <div class="form-group-buttons">
             <button type="button" onclick="previousPage(2)">Back</button>
